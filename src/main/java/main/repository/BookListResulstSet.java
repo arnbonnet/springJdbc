@@ -15,15 +15,11 @@ public class BookListResulstSet implements ResultSetExtractor<String> {
 		while(rs.next()) {
 			sb.append(rs.getLong("id"));
 			sb.append(semiColumn);
-			//sb.append("\"");
 			sb.append(rs.getString("title"));
-			//sb.append("\"");
 			sb.append(semiColumn);
 			sb.append(rs.getInt("nb_pages"));
 			sb.append(semiColumn);
-			//sb.append("\"");
 			sb.append(rs.getString("author"));
-			//sb.append("\"");
 			sb.append(semiColumn);
 			sb.append(rs.getDate("publication_date"));
 			sb.append(semiColumn + System.lineSeparator());
